@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "open sans", sans-serif;
+}
+.header{
+    width: 100%;
+    background: url("images/developer.png"), url("images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+.btn{
+    border-radius: 5px;
+    background: rgb(253, 110, 10);
+    padding: 20px 34px;
+    border: none;
+    color: white;
+}
+.text-color{
+    color: rgb(253, 110, 10);
+}
+.text-primary{
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 26px;
+}
+.font{
+    font-size: 40px;
+}
+nav{
+    width: 100%;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    font-size: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    padding: 12px 16px;
+    list-style-type: none;
+}
+        /* hardy-section style */
+
+.hardy-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10%;
+}
+.containar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+.containar h1{
+    font-size: 45px;
+}
+.contact-btn{
+    border-radius: 5px;
+    background: transparent;
+    padding: 20px 34px;
+    color: black;
+    margin-left: 10px;
+}
+.image-section{
+    width: 100%;
+    height: 675px;
+}
+.about-container{
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about{
+    text-align: center;
+}
+.about h1{
+    margin-bottom: 20px;
+}
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.items h3, h1{
+    color: rgba(0, 0, 0, 0.725);
+}
+.item p{
+    margin-bottom: 7px;
+}
+
+.card-items{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.267);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card img{
+    width: 50px;
+    height: 50px;
+}
+.card p{
+    color: rgba(0, 0, 0, 0.76);
+}
+.education-section{
+    width: 70%;
+    margin: 50px auto;
+}
+.education-heading{
+    text-align: center;
+    font-size: 45px;
+    margin: 100px 0;
+}
+.education-part1, .education-part2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.education-part1 div, .education-part2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.63);
+}
+.download-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background: rgb(255, 248, 243);
+    
+}
+footer div{
+    width: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 20px;
+}
+.social-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+}
+.social-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+footer div input , textarea{
+    padding: 20px;
+}
+
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 150px;
+}
+
+@media screen and (max-width: 600px){
+    .btn{
+        padding: 10px 16px;
+    }
+    .text-primary{
+        font-size: 16px;
+    }
+    .header{
+        width: 100%;
+        background: url("images/developer.png"), url("images/header_bg.png");
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+        background-size: contain;
+    }
+    nav{
+        width: 100%;
+        padding: 10px 3%;
+    }
+    nav h1{
+        font-size: 26px;
+    }
+    .image-section{
+        height: 375px;
+    }
+    .hardy-section{
+        width: 100%;
+        display: flex;
+        padding-left: 10px;
+    }
+    .about-container{
+        margin: 40px auto;
+    }
+    .education-heading{
+        text-align: center;
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    .containar{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+    .containar h1{
+        font-size: 30px;
+    }
+    .contact-btn{
+        padding: 10px 16px;
+        margin-left: 5px;
+    }
+    .education-section{
+        width: 90%;
+        margin: 50px auto;
+    }
+    .education-part1, .education-part2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .download-btn{
+        margin: 50px 0px;
+    }
+    footer{
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+    footer div{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        gap: 20px;
+    }
+}
+
